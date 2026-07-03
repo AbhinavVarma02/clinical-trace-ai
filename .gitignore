@@ -1,0 +1,46 @@
+# ===== Secrets & environment =====
+.env
+.env.local
+.env.production
+.streamlit/secrets.toml
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.Python
+venv/
+.venv/
+
+# ===== Editors / OS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===== ML experiment tracking & model artifacts (generated locally) =====
+mlruns/
+mlartifacts/
+models/*
+!models/.gitkeep
+
+# ===== Local data (downloaded or generated, never committed) =====
+data/raw/
+data/processed/
+
+# ===== Monitoring reports (generated) =====
+monitoring/reports/*.html
+monitoring/reports/*.json
+
+# ===== Notebooks / logs / test caches =====
+.ipynb_checkpoints/
+*.log
+.pytest_cache/
+.pytest_tmp/
+.pytest_run_tmp/
+
+# ===== Internal-only implementation guide (kept locally, not published) =====
+clinical-trace-ai-guide.md
+
+data/synthetic/
